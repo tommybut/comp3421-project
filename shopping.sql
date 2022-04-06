@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2022-04-06 15:59:30
+-- 產生時間： 2022-04-06 16:33:17
 -- 伺服器版本： 10.4.22-MariaDB
 -- PHP 版本： 8.1.1
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- 資料庫: `shopping`
 --
+CREATE DATABASE IF NOT EXISTS `shopping` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `shopping`;
 
 -- --------------------------------------------------------
 
