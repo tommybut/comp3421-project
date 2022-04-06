@@ -1,0 +1,81 @@
+.body,
+.html {
+    background-color: #EAEDED;
+}
+
+.navbar {
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.nav-link {
+    margin-right: 30px;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.container-fluid {
+    margin: 0 20px 0 20px;
+}
+
+.navbar-footer {
+    background-color: rgba(0, 0, 0, .65);
+    color: #FFFFFF;
+    padding: 3rem 3rem 2rem 3rem;
+    margin-top: 50px;
+    line-height: 2rem;
+}
+
+.footer-bio {
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer-bio i {
+    font-size: 25px;
+    margin-right: 5px;
+    color: #FFFFFF;
+}
+
+.goods-title {
+    font-size: 30px;
+    font-weight: 1000;
+    margin-bottom: 20px;
+}
+
+.goods-container {
+    margin-top: 50px;
+}
+
+.goods-container {
+    text-align: center;
+}
+
+.goods-container .col-4 {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.goods-container .col-4 img {
+    width: 80%;
+    height: auto;
+    margin: 10px 0 10px 0;
+}
+
+.goods-detail {
+    width: fit-content;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 5px 10px 5px;
+    background-color: #FFFFFF;
+}
