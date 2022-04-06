@@ -36,8 +36,8 @@
                         <a class="nav-link" href="./myorder.php">My Order</a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <form class="d-flex" action="search.php" method="post">
+                    <input class="form-control me-2" type="search" name="name" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-warning" type="submit">Search</button>
                 </form>
             </div>
