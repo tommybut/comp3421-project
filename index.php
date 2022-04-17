@@ -78,31 +78,36 @@ if(filter_input(INPUT_GET, "action") =="search"){
     <div class="goods-title">
         Commodity
     </div>
-
+	
+	<div class="row goods-row">
     <?php
     $goods = mysqli_query($dbConnection, "SELECT * FROM `goods` WHERE `name` LIKE '%$search_name%' ORDER BY `id` ASC");
     if($goods):
         if(mysqli_num_rows($goods) > 0):
             while ($product = mysqli_fetch_assoc($goods)):
             ?>
-            <div class="col-sm-4 col-md-3">
-                <form method="post" action="index.php?action=add&id=<?php echo $product["id"]; ?>">
-                    <div class="goods-detail">
-                        <img src="<?php echo $product["image"]; ?>" class="img-responsive"/>
-                        <h4 class="text-info"><?php echo $product["name"]; ?></h4>
-                        <h4>$ <?php echo $product["price"]; ?></h4>
-                        <input type="text" name="quantity" class="form-control" value="1" />
-                        <input type="hidden" name="name" value="<?php echo $product["name"]; ?>" />
-                        <input type="hidden" name="price" value="<?php echo $product["price"]; ?>" />
-                        <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-info" value="Add to Cart" />
-                    </div>
-                </form>
+            <div class="col-4">
+                <div class="goods-detail">
+					<form method="post" action="index.php?action=add&id=<?php echo $product["id"]; ?>">
+						<div class="goods-detail">
+							<img src="<?php echo $product["image"]; ?>" class="img-responsive"/>
+							<h4 class="text-info"><?php echo $product["name"]; ?></h4>
+							<h4>$ <?php echo $product["price"]; ?></h4>
+							<input type="text" name="quantity" class="form-control" value="1" />
+							<input type="hidden" name="name" value="<?php echo $product["name"]; ?>" />
+							<input type="hidden" name="price" value="<?php echo $product["price"]; ?>" />
+							<input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-info" value="Add to Cart" />
+						</div>
+					</form>
+				</div>
             </div>
             <?php
             endwhile;
         endif;
     endif;
     ?>
+	</div>
+	
     <div style="clear:both"></div>  
     <br />   
         <div class="table-responsive">  
