@@ -58,6 +58,14 @@ if(filter_input(INPUT_GET, "action") =="delete"){
     $_SESSION["shopping_cart"] = array_values($_SESSION["shopping_cart"]);
 }
 
+$search_name = '';
+if(filter_input(INPUT_GET, "action") =="search"){
+    if (isset($_POST['search_name'])) {
+		$search_name = $_POST['search_name'];
+	} 
+		
+}
+
 ?>
 
 <?php include('./header.php'); ?>
@@ -72,7 +80,7 @@ if(filter_input(INPUT_GET, "action") =="delete"){
     </div>
 
     <?php
-    $goods = mysqli_query($dbConnection, "SELECT * FROM `goods`");
+    $goods = mysqli_query($dbConnection, "SELECT * FROM `goods` WHERE `name` LIKE '%$search_name%' ORDER BY `id` ASC");
     if($goods):
         if(mysqli_num_rows($goods) > 0):
             while ($product = mysqli_fetch_assoc($goods)):
