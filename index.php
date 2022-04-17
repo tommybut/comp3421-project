@@ -153,7 +153,7 @@ if(filter_input(INPUT_GET, "action") =="search"){
                         if(isset($_SESSION["shopping_cart"])):
                         if(isset($_SESSION["shopping_cart"]) > 0):
                     ?>
-                        <a href="#">Checkout</a>
+                        <a href="./checkout.php">Checkout</a>
                     <?php endif; endif; ?>
                     </td>
                 </tr>
