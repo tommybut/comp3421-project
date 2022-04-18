@@ -32,9 +32,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./about.php">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./myorder.php">My Order</a>
-                    </li>
                 </ul>
                 <form class="d-flex" action="index.php?action=search&search_name=<?php echo $search_name; ?>" method="post">
                     <input class="form-control me-2" type="search" name="search_name" placeholder="Search" aria-label="Search">
