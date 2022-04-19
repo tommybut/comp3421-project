@@ -48,10 +48,10 @@ TRUNCATE TABLE `goods`;
 --
 
 INSERT INTO `goods` (`id`, `name`, `image`, `price`, `link`) VALUES
-(1, 'book1', './img/book1.jpg', 11.11, '/book/book1.equb'),
-(2, 'book2', './img/book2.jpg', 55.22, '/book/book2.equb'),
-(3, 'book3', './img/book3.jpg', 366.2, '/book/book3.equb'),
-(4, 'book4', './img/book4.jpg', 599.9, '/book/book4.equb');
+(1, 'book1', './img/book1.jpg', 11.11, '/book/book1.epub'),
+(2, 'book2', './img/book2.jpg', 55.22, '/book/book2.epub'),
+(3, 'book3', './img/book3.jpg', 366.2, '/book/book3.epub'),
+(4, 'book4', './img/book4.jpg', 599.9, '/book/book4.epub');
 
 --
 -- 已傾印資料表的索引
