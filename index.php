@@ -93,7 +93,7 @@ if(filter_input(INPUT_GET, "action") =="search"){
 							<img src="<?php echo $product["image"]; ?>" class="img-responsive"/>
 							<h4 class="text-info"><?php echo $product["name"]; ?></h4>
 							<h4>$ <?php echo $product["price"]; ?></h4>
-							<input type="text" name="quantity" class="form-control" value="1" />
+							<input type="number" name="quantity" class="form-control" value="1" min="1"  />
 							<input type="hidden" name="name" value="<?php echo $product["name"]; ?>" />
 							<input type="hidden" name="price" value="<?php echo $product["price"]; ?>" />
 							<input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-info" value="Add to Cart" />
